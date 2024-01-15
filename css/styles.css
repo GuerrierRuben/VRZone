@@ -430,6 +430,7 @@ header {
 
 .about{
   float: left;
+  text-align: justify;
 }
 
 .footer__bar {
