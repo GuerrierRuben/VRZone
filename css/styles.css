@@ -68,6 +68,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: gray;
+}
+
 img {
   width: 100%;
   display: block;
@@ -337,6 +341,10 @@ header {
 
 .news {
   background-color: var(--extra-light);
+}
+
+.news img{
+  max-height: 200px;
 }
 
 .news__grid {
