@@ -7,13 +7,3 @@ window.addEventListener('scroll', function() {
         document.body.classList.remove('scrolled')
     }
 })
-
-function setActiveLink(clickedLink) {
-    const allLinks = document.querySelectorAll('.left a')
-    allLinks.forEach(function(link) {
-      link.classList.remove('active')
-    })
-  
-    clickedLink.classList.add('active')
-  }
-  
