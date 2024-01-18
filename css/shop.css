@@ -184,7 +184,9 @@ ul{
   margin-left: -5px;
 }
 
-
+a{
+  color: var(--text-light);
+}
 
 #shop-section .right .info{
   padding: 0 100px 0 30px;
