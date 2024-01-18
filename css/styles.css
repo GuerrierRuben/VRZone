@@ -160,8 +160,14 @@ header {
 }
 
 .header__content h1 {
+  position: relative;
+  bottom: 150px;
+  font-family:cursive;
+  font-style: oblique;
+  font-variant: small-caps;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: bolder;
+  color:rgb(78, 77, 77) !important;
   margin-bottom: 2rem;
   color: var(--text-dark);
 }
