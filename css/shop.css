@@ -8,6 +8,7 @@
   --white: #ffffff;
   --max-width: 1200px;
   --black: black;
+  --text-light:#6b7280;
 }
 
 * {
@@ -58,11 +59,8 @@ body.scrolled .nav__logo img{
 }
 
 #header h1{
-  position: absolute;
-  right: 100px;
-  bottom: 0;
   color: var(--white);
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bolder;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -105,16 +103,12 @@ body {
 
 
 .nav__container {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav__logo img{
-  width: auto;
-  height: 100px;
-}
 
 .nav__links {
   list-style: none;
@@ -195,7 +189,7 @@ ul{
   width: 100%;
   display: flex;
   flex-direction: column;
-  height:1300px;
+  height:1350px;
 }
 
 #shop-section .right .info{
@@ -258,13 +252,12 @@ select {
 /***************************************************************/
 /*                        Sa se pye paj la                       */
 /***************************************************************/
-
-
 .footer__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   overflow: hidden;
+  padding: 50px 0 !important;
 }
 
 .footer__heading {
@@ -284,6 +277,9 @@ select {
   height: 2px;
   width: 50px;
   background-color: var(--text-light);
+}
+.footer__col p a:hover{
+  color: var(--text-dark);
 }
 
 .footer__col p {
@@ -351,48 +347,9 @@ select {
   color: var(--white);
 }
 
-@media (width < 900px) {
-  header {
-    margin-top: 5rem;
-  }
-  .header__image{
-    width: 350px;
-  }
-  .header__image .lips{
-    position: absolute;
-    max-width: 200px;
-    top: -30px;
-    right: 200px;
-  }
-
-  
-
-  .musthave__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-
-  .news__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-
-
-  .footer__bar {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .copyright {
-    text-align: center;
-  }
-
-  .footer__form {
-    justify-content: center;
-  }
-}
-
-@media (width < 600px) {
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  margin-bottom: 7px;
+  font-weight: bolder;
 }

@@ -52,17 +52,10 @@ html{
 .btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  /* padding: 0.8em 2em; */
-  border: 3px solid black;
-  border-radius: 1em;
-  color: #000;
+  margin-bottom: 7px;
   font-weight: bolder;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-  box-shadow: -5px 5px 0px 0px black;
 }
-.btn:hover{
-  transform: translate(5px, -5px);
-}
+
 
 a {
   text-decoration: none;
@@ -79,14 +72,6 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-.btno {
-  padding: 0.75rem 2rem;
-  font-size: 0.8rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .header__bar {
@@ -114,7 +99,7 @@ body {
 
 
 .nav__container {
-  padding: 2rem 1rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,7 +107,7 @@ body {
 
 .nav__logo img{
   width: auto;
-  height: 100px;
+  height: 200px;
 }
 
 .nav__links {
@@ -418,7 +403,9 @@ header {
   width: 50px;
   background-color: var(--text-light);
 }
-
+.footer__col p a:hover{
+  color: var(--text-dark);
+}
 .footer__col p {
   font-size: 0.9rem;
   font-weight: 500;
@@ -483,6 +470,28 @@ header {
   background-color: var(--text-dark);
   color: var(--white);
 }
+.brands__container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+
+.brand__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.brand__image img {
+  max-width: 120px;
+}
+
+.brand__image:hover {
+  opacity: 1;
+}
 
 @media (width < 900px) {
   header {
@@ -498,7 +507,9 @@ header {
     right: 200px;
   }
 
-  
+  .brands__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .musthave__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -557,6 +568,9 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .brands__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
