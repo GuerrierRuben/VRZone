@@ -44,19 +44,12 @@ body.scrolled #header{
   z-index: 100;
 }
 
-body.scrolled #header h1{
-  display: none;
-}
 
 body.scrolled .section__container {
   margin: auto;
   padding: 0.5rem 1rem;
 }
 
-body.scrolled .nav__logo img{
-  width: auto;
-  height: 60px;
-}
 
 #header h1{
   color: var(--white);
