@@ -381,16 +381,19 @@ button
     border: 10px solid rgb(0, 0, 0);
     border-radius: 5px;
   
-    animation: slide 5s linear infinite;
+    animation: slide 3s linear;
    
 }
 
 @keyframes slide{
   0%{
-    transform:translateX(30px);
+    transform:translateX(50px);
+  }
+  70%{
+    transform:translatex(-50px);
   }
   100%{
-    transform:translatex(-30px);
+    transform: translateX(0);
   }
 }
 
