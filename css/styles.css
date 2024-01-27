@@ -177,7 +177,8 @@ header {
  
 }
 .btn:hover{
-  background-color:yellow;
+ background: black;
+ color: white !important;
 
 }
 
@@ -581,4 +582,10 @@ header {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.about img{
+  float: left;
+  width: 7%;
+  height: 10%;
 }

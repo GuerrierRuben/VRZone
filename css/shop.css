@@ -342,3 +342,91 @@ select {
   margin-bottom: 7px;
   font-weight: bolder;
 }
+/***************************************************************/
+/*  Paj members la. Li gen menm antèt, menm pye ak paj shop la */
+/***************************************************************/
+
+
+button
+{
+    float: left;
+    width: 100%;
+    margin: 7px 0px;
+    padding: 20px 15px;
+    background: rgb(88, 66, 48);
+    color:white;
+    font-weight: bold;
+    border-radius: 16px ;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#blog-container
+{
+    float: left;
+    width: 100%;
+    display: grid;
+    padding: 50px 5%;
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    overflow: hidden;
+    
+}
+#blog-container img
+{
+    width: 100%;
+    float: left;
+    height: 100%;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  
+    animation: slide 5s linear infinite;
+   
+}
+
+@keyframes slide{
+  0%{
+    transform:translateX(30px);
+  }
+  100%{
+    transform:translatex(-30px);
+  }
+}
+
+#blog-container h2
+{
+    padding: 10px 0px;
+    float: left;
+    width: 100%;
+    font-size: 20px;
+}
+#blog-container a
+{
+    padding: 10px 0px;
+    float: left;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.members 
+{
+  height: 350px;
+  width: 300px;
+}
+.members p {
+  margin: 0PX 5PX;
+  padding: 0PX 5PX;
+}
+.members a {
+  margin: 0PX 5PX;
+  padding: 0PX 5PX;
+}
+.team {
+  text-align: center;
+  margin-top: 90px;
+}
